@@ -1,30 +1,32 @@
 import Link from 'next/link';
+import DarkModeSwitch from './DarkModeSwitch';
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between px-4 py-3 bg-gray-900 text-white shadow-md">
-      <div className="flex items-center justify-between w-full">
-        {/* Left Side: Navigation Links */}
-        <ul className="flex space-x-6">
+    
+      <div className="flex items-center justify-between p-3 max-w-6xl mx-auto">
+        
+        <ul className="flex gap-4">
           <li>
-            <Link href={"/signin"} className="text-lg hover:text-amber-500 transition duration-300">
+            <Link href={"/signin"} >
               Sign In
             </Link>
           </li>
           <li>
-            <Link href={"/"} className="text-lg hover:text-amber-500 transition duration-300">
+            <Link href={"/"} >
               Home
             </Link>
           </li>
           <li>
-            <Link href={"/about"} className="text-lg hover:text-amber-500 transition duration-300">
+            <Link href={"/about"} >
               About
             </Link>
           </li>
         </ul>
 
-        {/* Right Side: IMDB Clone */}
-        <div>
+        
+        <div className='flex items-center gap-4'>
+            <DarkModeSwitch />
           <Link href={"/"} >
             <span className="text-2xl font-bold bg-amber-500 py-2 px-3 rounded-lg mr-4">
               IMDB
@@ -32,7 +34,8 @@ export default function Header() {
             <span className="text-xl hidden sm:inline">Clone</span>
           </Link>
         </div>
+
       </div>
-    </header>
+    
   );
 }
