@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Movie Web App
 
-## Getting Started
+A fully-featured movie web application inspired by IMDB, created using Next.js and Clerk for authentication. The app fetches movie details from the TMDB Movie Database and provides a seamless user experience with dark and light mode options. It is fully responsive, supports search functionality, allows users to view detailed information about each movie, and lets users manage their favorite movies using CRUD operations with MongoDB.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Dark & Light Mode:** Toggle between dark and light themes for an enhanced viewing experience.
+- **Responsive Design:** Fully optimized for all devices, from desktops to mobile screens.
+- **Search Functionality:** Easily search for movies using the integrated search bar.
+- **Detailed Movie Information:** Each movie has its own page displaying comprehensive details.
+- **Favorites Management:** Add, view, edit, and delete favorite movies, powered by MongoDB.
+- **Authentication:** Secure user authentication using Clerk.
+- **CRUD Operations:** Full functionality for managing user data and movie favorites.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies Used
 
-## Learn More
+- **Frontend:** Next.js
+- **Authentication:** Clerk
+- **Database:** MongoDB
+- **Deployment:** Vercel
+- **API:** TMDB Movie Database
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation and Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository:
+   ```bash
+   git clone - https://github.com/LakshanMadushnka/imdb-clone-nextjs.git
+   cd <repository-directory>
+   ```
 
-## Deploy on Vercel
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Set up environment variables:
+   Create a `.env.local` file in the root directory and add the following:
+   ```plaintext
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_Y2hpZWYt......
+    CLERK_SECRET_KEY=sk_test_ztTN.....
+    NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+    NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+    SIGNING_SECRET=whsec_4Xkvj/7ndH.....
+    MONGODB_URI=mongodb+srv://lraxxxxx:xxxxx@cluster0.xudn7.mongodb.net/?re.........
+    API_KEY=64958aa6ef9d33e5.......
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
+
+---
+
+## Deployment
+
+The app is deployed on Vercel for fast and reliable hosting. Follow these steps to deploy:
+
+1. Push your code to a GitHub repository.
+2. Link the repository to Vercel.
+3. Add your environment variables in the Vercel dashboard.
+4. Deploy your app.
+
+---
+
+## Screenshots
+
+<img width="1680" alt="Image" src="https://github.com/user-attachments/assets/1506c8ed-ad1d-4f45-be0d-192fed23344b" />
+
+<img width="1680" alt="Image" src="https://github.com/user-attachments/assets/dbdce80a-4585-4812-92d5-16f2795d539e" />
+<img width="1680" alt="Image" src="https://github.com/user-attachments/assets/c12f6526-7b43-4adc-a06e-fa8ff42e32ae" />
+
+---
+
+
+
+## Contact
+
+For any inquiries or support, please contact:
+
+- **Name:** L.M. Ransinghe
+- **Email:** lranasinghe08@gmail.com
+
